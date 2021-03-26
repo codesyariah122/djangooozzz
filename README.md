@@ -84,3 +84,9 @@ And access your web browser http://localhost:8000
 ```
 
 
+
+#### Using package app  
+
+```bash
+# python manage.py startapp blog
+```
