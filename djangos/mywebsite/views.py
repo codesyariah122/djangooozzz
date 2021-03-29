@@ -1,14 +1,14 @@
 from django.shortcuts import render
 
-# Create your views here.
 def index(request):
 	context = {
-		'title': 'Blogpage',
-		'author': 'Reni Firmansyah',
+		'title': 'HomePage',
+		'devname': 'PujiErmanto',
 		'nav': [
 			['/', 'Home'],
-			['/story', 'Story'],
-			['/news', 'News']
-		]
+			['/blog', 'Blog'],
+			['/about', 'About'],
+			['/contact', 'Contact']
+		],
 	}
 	return render(request, 'index.html', context)

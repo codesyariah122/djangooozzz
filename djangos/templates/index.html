@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}} Django</title>
+</head>
+<body>
+
+	<h1>Welcome in {{title}}</h1>
+	<h4> {{devname}} </h4>
+
+	<ul>
+		{# template tags #}
+		{% for link, name in nav %}
+			<li>
+				<a href="{{link}}">{{name}}</a>
+			</li>
+		{% endfor %}
+	</ul>
+
+</body>
+</html>
